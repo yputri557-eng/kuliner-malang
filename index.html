@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuliner Malang - Guide & Wheel</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CDN Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#fafbf7] text-[#2c3327] font-['Plus_Jakarta_Sans'] min-h-screen flex flex-col justify-between selection:bg-[#F1B4AF] selection:text-white">
+
+    <!-- NAVBAR HEADER -->
+    <header class="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-[#e2e8df]">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-2xl bg-[#BBCA6F] flex items-center justify-center text-white shadow-sm font-black text-xl">
+                    K
+                </div>
+                <div>
+                    <h1 class="font-extrabold text-xl tracking-tight text-[#2c3327]" style="font-family: 'Playfair Display', serif;">Kuliner Malang</h1>
+                    <p class="text-[10px] font-bold tracking-widest text-[#707968] uppercase">Jejak Rasa, Ragam Cerita</p>
+                </div>
+            </div>
+
+            <div class="flex items-center space-x-3">
+                <button onclick="openWheelModal()" class="bg-[#BBCA6F] hover:bg-[#a3b355] text-[#2c3327] px-4 py-2.5 rounded-2xl font-bold text-xs sm:text-sm shadow-sm transition-all flex items-center space-x-2 active:scale-95">
+                    <i class="fa-solid fa-arrows-spin text-sm"></i>
+                    <span class="hidden sm:inline">Bingung Makan Apa?</span>
+                    <span class="sm:hidden">Roda Acak</span>
+                </button>
+                <button onclick="openFavoritesModal()" class="relative p-2.5 rounded-2xl bg-[#f2f4ec] hover:bg-[#e4e8db] text-[#2c3327] transition-all">
+                    <i class="fa-solid fa-heart text-lg text-[#F1B4AF]"></i>
+                    <span id="fav-badge" class="hidden absolute -top-1 -right-1 bg-[#F1B4AF] text-white text-[10px] font-black w-5 h-5 rounded-full flex items-center justify-center shadow-xs">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative py-12 sm:py-16 px-4 bg-gradient-to-b from-[#f3f6eb] to-[#fafbf7] overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center relative z-10 space-y-4">
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F1B4AF]/20 text-[#854540] text-xs font-bold border border-[#F1B4AF]/30">
+                <i class="fa-solid fa-[#BBCA6F] fa-utensils"></i> Good food, Good mood
+            </span>
+            <h2 class="text-3xl sm:text-5xl font-extrabold text-[#2c3327] leading-tight" style="font-family: 'Playfair Display', serif;">
+                Jelajahi Cita Rasa Autentik Kota Malang
+            </h2>
+            <p class="text-sm sm:text-base text-[#525c4a] max-w-2xl mx-auto">
+                Rasa selalu memiliki caranya sendiri untuk bercerita. Ia hidup dalam resep-resep lama yang diwariskan lintas generasi, tumbuh melalui racikan khas yang dipertahankan, dan menjelma dalam sajian baru yang penuh kreativitas. Dari tempat makan legendaris hingga ruang-ruang kuliner kekinian, ada begitu banyak kelezatan yang menanti untuk ditemukan. Telusuri setiap sudut, kenali keistimewaannya, dan biarkan setiap hidangan menjadi bagian dari perjalanan yang meninggalkan kesan.
+            </p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 py-8 flex-grow w-full">
+        
+        <!-- FILTER & SEARCH BAR -->
+        <div class="bg-white p-4 sm:p-6 rounded-3xl border border-[#e2e8df] shadow-xs mb-8 space-y-4">
+            <div class="flex flex-col md:flex-row gap-4 justify-between items-center">
+                <!-- Search Input -->
+                <div class="relative w-full md:w-96">
+                    <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                    <input type="text" id="search-input" placeholder="Cari nama makanan, tempat, atau lokasi..." 
+                           class="w-full pl-11 pr-4 py-3 bg-[#f9faf7] border border-[#e2e8df] rounded-2xl text-xs sm:text-sm focus:outline-none focus:border-[#BBCA6F] transition-all">
+                </div>
+
+                <!-- Category & Reset -->
+                <div class="flex flex-wrap items-center gap-3 w-full md:w-auto">
+                    <select id="category-filter" class="flex-1 md:flex-none px-4 py-3 bg-[#f9faf7] border border-[#e2e8df] rounded-2xl text-xs sm:text-sm font-semibold focus:outline-none focus:border-[#BBCA6F]">
+                        <option value="all">Semua Kategori</option>
+                        <option value="Bakso">Bakso</option>
+                        <option value="Mie">Mie</option>
+                        <option value="Lalapan">Lalapan</option>
+                        <option value="Depot">Depot</option>
+                        <option value="Rumah makan padang">Rumah makan padang</option>
+                        <option value="Camilan">Camilan</option>
+                    </select>
+                    
+                    <button onclick="resetFilter()" class="px-4 py-3 bg-[#f2f4ec] hover:bg-[#e2e8df] text-[#525c4a] text-xs font-bold rounded-2xl transition-all">
+                        Reset Filter
+                    </button>
+                </div>
+            </div>
+
+            <!-- Price Range Filter Buttons -->
+            <div class="flex items-center gap-2 pt-2 border-t border-[#f2f4ec] overflow-x-auto pb-1">
+                <span class="text-xs font-bold text-[#707968] whitespace-nowrap mr-2">Harga:</span>
+                <button onclick="filterByPrice('all')" data-price="all" class="price-btn active px-3 py-1.5 rounded-xl text-xs font-bold transition-all whitespace-nowrap">Semua</button>
+                <button onclick="filterByPrice('hemat')" data-price="hemat" class="price-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all whitespace-nowrap">Hemat (< Rp20k)</button>
+                <button onclick="filterByPrice('sedang')" data-price="sedang" class="price-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all whitespace-nowrap">Sedang (Rp20k - Rp50k)</button>
+                <button onclick="filterByPrice('premium')" data-price="premium" class="price-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all whitespace-nowrap">Premium (> Rp50k)</button>
+            </div>
+        </div>
+
+        <!-- COUNTER -->
+        <div class="mb-6 flex justify-between items-center">
+            <p class="text-xs font-bold text-[#707968]">Menampilkan <span id="result-count" class="text-[#2c3327] font-black">0</span> Destinasi Kuliner</p>
+        </div>
+
+        <!-- GRID DOKUMEN KULINER -->
+        <div id="kuliner-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <!-- Disuntik lewat script.js -->
+        </div>
+
+        <!-- EMPTY STATE -->
+        <div id="empty-state" class="hidden text-center py-16 space-y-3">
+            <div class="w-16 h-16 bg-[#F1B4AF]/20 text-[#F1B4AF] rounded-full flex items-center justify-center mx-auto text-2xl">
+                <i class="fa-solid fa-utensils"></i>
+            </div>
+            <h3 class="text-lg font-bold text-[#2c3327]">Kuliner Tidak Ditemukan</h3>
+            <p class="text-xs text-[#707968]">Coba gunakan kata kunci lain atau reset filter pilihanmu.</p>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-t border-[#e2e8df] py-8 mt-16">
+        <div class="max-w-6xl mx-auto px-4 text-center space-y-2">
+            <p class="text-xs font-bold text-[#707968]">&copy; 2026 Kuliner Malang Directory. Built with Matcha & Strawberry Milk Theme.</p>
+        </div>
+    </footer>
+
+    <!-- MODAL DETAIL KULINER -->
+    <div id="detail-modal" class="hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl animate-fade-in border border-[#e2e8df] max-h-[90vh] overflow-y-auto">
+            <div id="modal-content">
+                <!-- Data detail diisi script.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL FAVORIT -->
+    <div id="favorites-modal" class="hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 shadow-2xl border border-[#e2e8df]">
+            <div class="flex justify-between items-center mb-4 pb-3 border-b border-[#f2f4ec]">
+                <h3 class="font-extrabold text-lg text-[#2c3327]" style="font-family: 'Playfair Display', serif;">Kuliner Favorit Saya</h3>
+                <button onclick="closeFavoritesModal()" class="text-gray-400 hover:text-gray-600 p-1">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+            <div id="favorites-list" class="space-y-3 max-h-80 overflow-y-auto pr-1">
+                <!-- Daftar favorit disuntik script.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL RODA ACAK (SPINNING WHEEL) -->
+    <div id="wheel-modal" class="hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-sm w-full p-6 shadow-2xl border border-[#e2e8df] text-center relative">
+            <button onclick="closeWheelModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 w-8 h-8 rounded-full bg-[#f2f4ec] flex items-center justify-center">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="w-12 h-12 rounded-2xl bg-[#F1B4AF]/20 text-[#F1B4AF] flex items-center justify-center mx-auto mb-3 text-xl">
+                <i class="fa-solid fa-arrows-spin"></i>
+            </div>
+            
+            <h3 class="font-extrabold text-xl text-[#2c3327] mb-1" style="font-family: 'Playfair Display', serif;">Roda Kuliner Malang</h3>
+            <p class="text-xs text-[#707968] mb-4">Putar rodanya untuk menentukan tempat makanmu hari ini!</p>
+
+            <!-- CANVAS RODA -->
+            <div class="relative w-[280px] h-[280px] mx-auto mb-4">
+                <!-- Jarum Penunjuk di Atas -->
+                <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1 z-10 w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-t-[16px] border-t-[#422c2a] drop-shadow-sm"></div>
+                <canvas id="wheel-canvas" width="280" height="280" class="rounded-full shadow-md"></canvas>
+            </div>
+
+            <!-- RESULT BOX -->
+            <div id="wheel-result-box" class="min-h-[60px] bg-[#f9faf7] rounded-2xl border border-[#e2e8df] p-3 flex flex-col items-center justify-center mb-4">
+                <span class="text-[#8a9482] text-xs font-semibold">Tekan tombol putar di bawah!</span>
+            </div>
+
+            <!-- ACTION BUTTONS -->
+            <div class="flex items-center gap-2">
+                <button id="spin-btn" onclick="spinWheel()" class="flex-1 bg-[#BBCA6F] hover:bg-[#a3b355] text-[#2c3327] py-3 rounded-xl font-extrabold text-sm shadow-md transition-all flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-play text-xs"></i>
+                    <span>Putar Roda!</span>
+                </button>
+                <button id="wheel-detail-btn" class="hidden bg-[#2c3327] text-white px-4 py-3 rounded-xl font-bold text-xs hover:bg-black transition-all">
+                    Detail
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>

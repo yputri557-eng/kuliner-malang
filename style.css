@@ -1,0 +1,52 @@
+/* Custom Stylesheet - Theme Pantone Matcha (#BBCA6F) & Strawberry Milk (#F1B4AF) */
+
+/* Active State Filter Tombol Harga */
+.price-btn {
+    background-color: #f2f4ec;
+    color: #525c4a;
+}
+
+.price-btn:hover {
+    background-color: #e4e8db;
+}
+
+.price-btn.active {
+    background-color: #BBCA6F !important;
+    color: #2c3327 !important;
+    box-shadow: 0 2px 4px rgba(187, 202, 111, 0.3);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fafbf7;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #BBCA6F;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a3b355;
+}
+
+/* Simple Keyframe Fade In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.3s ease-out forwards;
+}
