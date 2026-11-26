@@ -20,58 +20,58 @@ let kulinerData = [
     {
         id: 1,
         name: "Ayam Goreng Nelongso",
-        category: "Warung lalapan",
+        category: "Lalapan",
         priceRange: "hemat",
-        priceText: "Rp 12.000 - Rp 30.000",
-        rating: 4.6,
-        reviews: 5120,
+        priceText: "Rp 5.000 - Rp 30.000",
+        rating: 4.8,
+        reviews: 5.823,
         address: "Jl. Soekarno Hatta No.35, Lowokwaru, Kota Malang",
         desc: "Pionir ayam pedas populer khas Malang yang buka 24 jam dengan berbagai pilihan sambal nikmat dan harga yang sangat bersahabat bagi mahasiswa.",
         image: "images/Ayam Goreng Nelongso.jpeg",
         mapsUrl: "https://maps.google.com/?q=Ayam+Goreng+Nelongso+Malang",
-        signature: "Ayam Sambal Kepruk, Nasi Timbel"
+        signature: "Ayam Bakar, Bebek Jumbo, Nila Goreng, Cah Kangkung"
     },
     {
         id: 2,
         name: "Depot Tanjung Api",
-        category: "Depot & Nasi",
+        category: "Depot",
         priceRange: "sedang",
         priceText: "Rp 15.000 - Rp 35.000",
-        rating: 4.7,
+        rating: 4.8,
         reviews: 1280,
         address: "Jl. Trunojoyo No.23, Klojen, Kec. Klojen, Kota Malang",
         desc: "Depot kuliner legendaris di Malang yang menyajikan hidangan lezat dengan cita rasa khas rumahan yang autentik dan suasana tempo dulu.",
         image: "images/Depot Tanjung Api.jpeg",
         mapsUrl: "https://maps.google.com/?q=Depot+Tanjung+Api+Malang",
-        signature: "Masakan Khas Nusantara"
+        signature: "Nasi Daging Sambal Bawang, Nasi Cumi Sambal Bawang, Mie Szechuan, Es Pisang ijo"
     },
     {
         id: 3,
         name: "RM Sejawat",
-        category: "Depot & Nasi",
-        priceRange: "sedang",
-        priceText: "Rp 15.000 - Rp 40.000",
+        category: "Depot",
+        priceRange: "hemat",
+        priceText: "Rp 10.000 - Rp 25.000",
         rating: 4.8,
         reviews: 1420,
-        address: "Kota Malang",
+        address: "Jl. Kepundung No.31B, Bareng, Kec. Klojen, Kota Malang, Jawa Timur 65116",
         desc: "Rumah makan dengan suasana hangat dan nyaman, menyajikan pilihan menu masakan nusantara favorit yang pas untuk bersantap bersama keluarga maupun kerabat.",
         image: "images/RM SEJAWAT.jpeg",
-        mapsUrl: "https://maps.google.com/?q=RM+Sejawat+Malang",
-        signature: "Menu Andalan Nusantara"
+        mapsUrl: "https://maps.app.goo.gl/XisJhYCpBDZjFMsaA",
+        signature: "Nasi Cumi, Nasi Ayam Suwir, Kulit Krispi"
     },
     {
         id: 4,
-        name: "Soto Bang Ipul",
+        name: "Soto Tangkar Babeh Oga",
         category: "Soto",
-        priceRange: "hemat",
-        priceText: "Rp 12.000 - Rp 25.000",
+        priceRange: "sedang",
+        priceText: "Rp 25.000 - Rp 50.000",
         rating: 4.7,
-        reviews: 980,
-        address: "Kota Malang",
-        desc: "Soto kuah gurih dan hangat dengan potongan daging melimpah serta rempah pilihan khas Nusantara yang nikmat disantap kapan saja.",
-        image: "images/Soto Bang Ipul.jpeg",
-        mapsUrl: "https://maps.google.com/?q=Soto+Bang+Ipul+Malang",
-        signature: "Soto Daging Spesial"
+        reviews: 1.131,
+        address: "Jl. Kepundung No.9, Bareng, Kec. Klojen, Kota Malang, Jawa Timur 65116",
+        desc: "Soto Tangkar Babeh Oga menyajikan kelezatan soto khas Betawi dengan kuah santan gurih kaya rempah dan potongan daging sapi yang empuk yang menghadirkan kenikmatan dalam setiap suapan.",
+        image: "images/SOTO TANGKAR.jpeg",
+        mapsUrl: "https://maps.app.goo.gl/AZWkiqRjZT8T2KyK8",
+        signature: "Soto Tangkap Campur, Sate Lemak, Sate Daging"
     },
     {
         id: 5,
@@ -90,11 +90,11 @@ let kulinerData = [
     {
         id: 6,
         name: "Warung Baleluwe",
-        category: "Warung lalapan",
+        category: "Lalapan",
         priceRange: "hemat",
-        priceText: "Mulai Rp8.000",
-        rating: 4.6,
-        reviews: 450,
+        priceText: "Rp5.000 - Rp12.000",
+        rating: 4.9,
+        reviews: 1.942,
         address: "Jl. Terusan Surabaya No. 53, Sumbersari, Kec. Klojen, Kota Malang",
         desc: "Warung lalapan favorit anak kos dan mahasiswa di Malang yang menyajikan aneka olahan ayam dengan pilihan berbagai jenis sambal nikmat.",
         image: "images/Bale Luwe.jpeg",
@@ -104,10 +104,10 @@ let kulinerData = [
     {
         id: 7,
         name: "Lalapan CJDW Bu Bawang",
-        category: "Warung lalapan",
+        category: "Lalapan",
         priceRange: "hemat",
-        priceText: "Rp9.000 - Rp13.000",
-        rating: 4.7,
+        priceText: "Rp10.000 - Rp15.000",
+        rating: 4.8,
         reviews: 620,
         address: "Jalan Sumbersari VII No. 35, Sumbersari, Kec. Lowokwaru, Kota Malang",
         desc: "Tempat makan lalapan andalan yang terkenal dengan pilihan variasi sambal melimpah (hingga belasan jenis sambal) dan harga yang sangat ramah di kantong.",
@@ -121,13 +121,13 @@ let kulinerData = [
         category: "Mie",
         priceRange: "hemat",
         priceText: "Rp 10.000 - Rp 20.000",
-        rating: 4.6,
+        rating: 4.8,
         reviews: 410,
         address: "Kota Malang",
         desc: "Kedai mie ayam legendaris dengan tekstur mie kenyal, potongan ayam gurih berlimpah, serta kuah kaldu hangat yang sedap.",
         image: "images/Mie Ayam Pak No.jpeg",
         mapsUrl: "https://maps.google.com/?q=Mie+Ayam+Pak+No+Malang",
-        signature: "Mie Ayam Spesial Pangsit"
+        signature: "Mie Ayam Kuah Pedas, Mie Ayam Yamin"
     },
     {
         id: 9,
@@ -135,7 +135,7 @@ let kulinerData = [
         category: "Bakso",
         priceRange: "hemat",
         priceText: "Rp 1.000 - Rp 15.000",
-        rating: 4.5,
+        rating: 4.9,
         reviews: 536,
         address: "Jl. Sigura-Gura No. 34, Sumbersari, Lowokwaru, Kota Malang",
         desc: "Bakso Malang populer dengan pilihan ragam gorengan, siomay, dan bakso berkuah gurih nikmat yang pas untuk santap santai.",
@@ -149,8 +149,8 @@ let kulinerData = [
         category: "Lalapan",
         priceRange: "sedang",
         priceText: "Sekitar Rp.25.000- Rp.175.000",
-        rating: 4.4,
-        reviews: 2900,
+        rating: 4.6,
+        reviews: 2.900,
         address: "Jl. Arjuno No. 2, Kauman, Kec. Klojen, Kota Malang, Jawa Timur 65119",
         desc: "Restoran keluarga yang menyajikan masakan Indonesia dengan ayam bakar sebagai menu utama, dilengkapi pilihan sambal dan lauk lainnya.",
         image: "images/Ayam Bakar Wong Solo.jpeg",
@@ -163,7 +163,7 @@ let kulinerData = [
         category: "Lalapan",
         priceRange: "hemat",
         priceText: "Sekitar Rp17.000 per porsi",
-        rating: 4.5,
+        rating: 4.6,
         reviews: 741,
         address: "Jl. Dewandaru No. 3, Jatimulyo, Kec. Lowokwaru, Kota Malang, Jawa Timur 65141",
         desc: "Tempat makan kasual yang dikenal dengan hidangan ayam dan sambal hijau bercita rasa pedas gurih.",
@@ -177,7 +177,7 @@ let kulinerData = [
         category: "Lalapan",
         priceRange: "sedang",
         priceText: "Rp22.900",
-        rating: 3.0,
+        rating: 4.5,
         reviews: 8,
         address: "Jl. Bendungan Kedung Ombo No. 5, Sumbersari, Kec. Lowokwaru, Kota Malang, Jawa Timur 65145",
         desc: "Cocok untuk mahasiswa dan rombongan/grup.",
@@ -232,7 +232,7 @@ let kulinerData = [
         category: "Rumah makan padang",
         priceRange: "hemat",
         priceText: "Rp. 2.000 - Rp.19.000",
-        rating: 4.4,
+        rating: 4.5,
         reviews: 56,
         address: "Jl. Mayjend Panjaitan No.46, Penanggungan, Kec. Klojen, Kota Malang, Jawa Timur 65113",
         desc: "Warung makan dengan menu andalan ayam kukus dan rambak siram yang cocok disantap bersama nasi hangat dan sambalnya.",
@@ -246,7 +246,7 @@ let kulinerData = [
         category: "Kafe",
         priceRange: "hemat",
         priceText: "Mulai Rp10.000 - Rp25.000",
-        rating: 4.7,
+        rating: 4.9,
         reviews: 1200,
         address: "Jl. Bromo No.4, Kauman, Kec. Klojen, Kota Malang, Jawa Timur 65119",
         desc: "Kafe populer 24 jam di Malang yang sering dijadikan tempat nongkrong dan nugas mahasiswa dengan pilihan kopi, camilan, serta makanan berat.",
@@ -260,7 +260,7 @@ let kulinerData = [
         category: "Kafe",
         priceRange: "sedang",
         priceText: "Rp20.000 - Rp50.000",
-        rating: 4.6,
+        rating: 4.8,
         reviews: 850,
         address: "Jl. Buring No. 53, Oro-oro Dowo, Kec. Klojen, Kota Malang",
         desc: "Kedai kopi favorit di kawasan Klojen/Ijen dengan suasana nyaman untuk bersantai maupun mengerjakan tugas bersama pilihan kopi dan non-kopi.",
@@ -274,7 +274,7 @@ let kulinerData = [
         category: "Kafe",
         priceRange: "sedang",
         priceText: "Rp15.000 - Rp35.000",
-        rating: 4.7,
+        rating: 4.8,
         reviews: 420,
         address: "Jl. Bendungan Sutami Gg. Sawah Jl. Bendungan Sutami, Sumbersari, Kec. Lowokwaru, Kota Malang, Jawa Timur 65144",
         desc: "Kedai santai di Malang dengan suasana hangat dan nyaman yang cocok untuk nongkrong, ngobrol, atau bersantap ringan bersama teman.",
@@ -288,7 +288,7 @@ let kulinerData = [
         category: "Bakso",
         priceRange: "hemat",
         priceText: "Rp10.000 - Rp25.000",
-        rating: 4.5,
+        rating: 4.8,
         reviews: 320,
         address: "Jl. Letjend S. Parman, Purwantoro, Kec. Blimbing, Kota Malang, Jawa Timur",
         desc: "Warung bakso di Malang dengan sajian kuah hangat dan pilihan bakso serta pelengkap yang cocok untuk makan santai maupun mengenyangkan.",
@@ -302,7 +302,7 @@ let kulinerData = [
         category: "Bakso",
         priceRange: "hemat",
         priceText: "Rp10.000 - Rp20.000",
-        rating: 4.6,
+        rating: 4.7,
         reviews: 450,
         address: "Jl. Raya Sumbersari, Sumbersari, Kec. Lowokwaru, Kota Malang, Jawa Timur 65145",
         desc: "Pilihan bakso sayur favorit di sekitar kampus yang menyajikan bakso, sayuran segar, serta pelengkap dengan harga ramah di kantong mahasiswa.",
@@ -336,7 +336,7 @@ let kulinerData = [
         desc: "Tempat kuliner santai di Malang yang menyajikan pilihan camilan dan minuman kekinian yang cocok untuk teman nongkrong atau ngemil sore.",
         image: "images/UMAYUMCHA.jpeg",
         mapsUrl: "https://maps.app.goo.gl/8SrmzxVNv7EaML8x9?g_st=ac",
-        signature: "Camilan & Minuman Segar"
+        signature: "Dimsum"
     },
     {
         id: 24,
@@ -350,7 +350,7 @@ let kulinerData = [
         desc: "Spot camilan pisang di Malang dengan sajian manis gurih yang pas untuk dinikmati saat santai maupun berkumpul bersama teman.",
         image: "images/PISANG.jpeg",
         mapsUrl: "https://maps.app.goo.gl/GkvNGakqfvb9vy1m6?g_st=ac",
-        signature: "Olahan Pisang Kekinian"
+        signature: "Pisang Chocomaltine, Pisang Greentea"
     },
     {
         id: 25,
@@ -364,7 +364,7 @@ let kulinerData = [
         desc: "Kedai dengan suasana nyaman di Malang yang menawarkan beragam pilihan minuman dan menu makanan untuk bersantai atau berdiskusi.",
         image: "images/KEDAI SINGHA.jpeg",
         mapsUrl: "https://maps.app.goo.gl/Et3jvMg2ddwRfLvWA",
-        signature: "Aneka Minuman & Menu Kedai"
+        signature: "Terang Bulan Pisang Coklat, Terang Bulan Coklat Keju"
     },
     {
         id: 26,
@@ -378,7 +378,7 @@ let kulinerData = [
         desc: "Tempat makan dimsum hangat di Malang dengan pilihan aneka dimsum gurih yang cocok untuk camilan maupun menu pendamping santai.",
         image: "images/HOTMAN.jpeg",
         mapsUrl: "https://maps.app.goo.gl/TQjkpkwo1PXW8Yjq8?g_st=ac",
-        signature: "Aneka Dimsum Kukus/Goreng"
+        signature: "Dimsum Mentai"
     },
     {
         id: 27,
@@ -400,13 +400,13 @@ let kulinerData = [
         category: "Mie",
         priceRange: "hemat",
         priceText: "Rp.10.000-Rp.15.000",
-        rating: 4.8,
+        rating: 4.9,
         reviews: 4168,
         address: "Kantin FMIPA UM, Jl. Cakrawala No. 2, Sumbersari, Lowokwaru, Kota Malang, Jawa Timur 65145",
         desc: "Pilihan makanan di lingkungan kantin FMIPA Universitas Negeri Malang yang cocok untuk mahasiswa maupun warga kampus di sela kegiatan perkuliahan.",
         image: "images/MI AYAM FMIPA.jpeg",
         mapsUrl: "https://maps.app.goo.gl/np1YgTN94EMwQD1f6?g_st=ic",
-        signature: "Mie ayam & rawon"
+        signature: "Mie ayam, rawon, pecel"
     },
     {
         id: 29,
@@ -441,7 +441,7 @@ let kulinerData = [
         name: "RM Padang Roda Baru Depan Ringin",
         category: "Rumah makan Padang",
         priceRange: "hemat",
-        priceText: "Sekitar Rp9.000–Rp25.000",
+        priceText: "Rp15.000–Rp25.000",
         rating: 4.9,
         reviews: 2.999,
         address: "Jl. Bendungan Sutami No. 53, Sumbersari, Kec. Lowokwaru, Kota Malang, Jawa Timur",
@@ -449,6 +449,174 @@ let kulinerData = [
         image: "images/NASPAD RODA BARU.jpeg",
         mapsUrl: "https://maps.app.goo.gl/2eoHhky38cJv7A9F7?g_st=ic",
         signature: "Rendang, ayam pop, ayam goreng, gulai nangka, paru goreng, dan sambal hijau"
+    },
+    {
+        id: 33,
+        name: "Warung Sunda AA",
+        category: "Lalapan",
+        priceRange: "sedang",
+        priceText: "Rp25.000–Rp50.000 per orang",
+        rating: 4.8,
+        reviews: 330,
+        address: "Jl. Bendungan Tangga No. 4A, Sumbersari, Kecamatan Lowokwaru, Kota Malang, Jawa Timur 65141",
+        desc: "Rumah makan yang menyediakan berbagai hidangan khas Sunda dengan cita rasa gurih dan autentik, terdiri dari nasi, aneka lauk, lalapan segar, serta sambal khas Sunda dengan konsep semi-outdoor.",
+        image: "images/WARSUN AA.jpg",
+        mapsUrl: "https://maps.app.goo.gl/DLJKsRcqncRpd2q86?g_st=ic",
+        signature: "Paket Wareg Pisan, ayam kampung, nasi putih, nasi tutug oncom, udang bawang, paru tumis, oseng jando, dan empat varian sambal khas Sunda"
+    },
+    {
+        id: 34,
+        name: "Bang Jo Ayam Geprek",
+        category: "Lalapan",
+        priceRange: "hemat",
+        priceText: "Terjangkau",
+        rating: 4.7,
+        reviews: 1966,
+        address: "Jl. Sigura Gura Barat Raya, Karangbesuki, Sukun, Kota Malang, Jawa Timur 65145",
+        desc: "Tempat makan yang menyediakan ayam geprek dengan ayam goreng tepung renyah dan sambal yang diulek sesuai pesanan, menjadi salah satu pilihan mahasiswa di kawasan Sigura-gura.",
+        image: "images/BANG JO AYAM GEPREK.jpg",
+        mapsUrl: "https://maps.app.goo.gl/AByn8kHPMWVC4HxR8?g_st=ic",
+        signature: "Ayam geprek, tempe geprek, jamur dan udang"
+    },
+    {
+        id: 35,
+        name: "Opa Noodle Bar",
+        category: "Mie",
+        priceRange: "sedang",
+        priceText: "Menengah",
+        rating: 4.8,
+        reviews: 1.054,
+        address: "Jl. Blitar No. 20, Sumbersari, Lowokwaru, Kota Malang, Jawa Timur 65145",
+        desc: "Restoran yang menawarkan berbagai hidangan mi dengan pilihan kuah dan topping yang beragam, mengusung konsep noodle bar modern dengan pilihan makanan pendamping seperti dim sum.",
+        image: "images/OPA NOODLE BAR.jpg",
+        mapsUrl: "https://maps.app.goo.gl/98HV6G2c2oWYWmdQ8",
+        signature: "Mi collagen, mi mala, mi kari, dan dim sum"
+    },
+    {
+        id: 36,
+        name: "Ayam Wangi Mbok Ti",
+        category: "Lalapan",
+        priceRange: "hemat",
+        priceText: "Mulai sekitar Rp20.000 per porsi",
+        rating: 4.8,
+        reviews: 133,
+        address: "Jl. Semeru No. 64, Oro-oro Dowo, Klojen, Kota Malang, Jawa Timur 65119",
+        desc: "Rumah makan yang menyajikan olahan ayam dengan bumbu rempah khas seperti ketumbar dan bawang putih sehingga menghasilkan aroma harum dan cita rasa gurih.",
+        image: "images/AYAM WANGI.jpg",
+        mapsUrl: "https://maps.app.goo.gl/VaYtKK52Vq1oSP4k9",
+        signature: "Ayam Wangi dan Kulit Wangi"
+    },
+    {
+        id: 37,
+        name: "Ayam Goreng Malang Bu Iyem",
+        category: "Depot",
+        priceRange: "sedang",
+        priceText: "Sekitar Rp25.000–Rp45.000 per porsi",
+        rating: 4.8,
+        reviews: 230,
+        address: "Jl. Simpang Gajayana, Dinoyo, Lowokwaru, Kota Malang, Jawa Timur 65144",
+        desc: "Rumah makan yang menyajikan ayam goreng dengan cita rasa tradisional khas rumahan menggunakan bumbu rempah bawang putih, ketumbar, dan kunyit.",
+        image: "images/BU IYEM.jpg",
+        mapsUrl: "https://maps.app.goo.gl/dpvhGaUJqYWLrqhm8",
+        signature: "Ayam goreng kampung, nasi hangat, dan sambal"
+    },
+    {
+        id: 38,
+        name: "Batagor Siomay Abadi",
+        category: "Camilan",
+        priceRange: "hemat",
+        priceText: "Sekitar Rp10.000–Rp15.000 per porsi",
+        rating: 4.7,
+        reviews: 287,
+        address: "Jl. Simpang Borobudur No. 33–37, Mojolangu, Lowokwaru, Kota Malang, Jawa Timur 65142",
+        desc: "Tempat makan yang menyediakan jajanan khas Bandung berupa batagor dan siomay yang disajikan dengan bumbu kacang kental dan gurih.",
+        image: "images/SIOMAY.jpg",
+        mapsUrl: "https://maps.app.goo.gl/12qqZubgiRPKp7Dg9",
+        signature: "Batagor, siomay, dan siomay mix batagor"
+    },
+    {
+        id: 39,
+        name: "Soto Qonaah",
+        category: "Soto",
+        priceRange: "hemat",
+        priceText: "Terjangkau",
+        rating: 4.8,
+        reviews: 587,
+        address: "Jl. Sunan Kalijaga No. 26, Dinoyo, Lowokwaru, Kota Malang, Jawa Timur 65145",
+        desc: "Rumah makan yang menyajikan soto ayam dengan kuah bening dan cita rasa gurih yang banyak dikunjungi masyarakat dan mahasiswa untuk sarapan.",
+        image: "images/SOTO QONAAH.jpg",
+        mapsUrl: "https://maps.app.goo.gl/SL38gvTmiM1S2HwDA",
+        signature: "Soto ayam dan nasi putih"
+    },
+    {
+        id: 40,
+        name: "Ayam Rempah Lado Malang",
+        category: "Lalapan",
+        priceRange: "hemat",
+        priceText: "Terjangkau",
+        rating: 4.8,
+        reviews: 559,
+        address: "Jl. Bogor No. 30, Penanggungan, Klojen, Kota Malang, Jawa Timur 65141",
+        desc: "Tempat makan yang menawarkan hidangan ayam dengan bumbu rempah khas Indonesia dan pilihan sambal lado dengan perpaduan rasa gurih serta pedas.",
+        image: "images/AYAM REMPAH.jpg",
+        mapsUrl: "https://maps.app.goo.gl/M2cZ5eo62sBYXFibA",
+        signature: "Ayam rempah dan ayam dengan sambal lado"
+    },
+    {
+        id: 41,
+        name: "Mie Bakar Celaket",
+        category: "Mie",
+        priceRange: "sedang",
+        priceText: "Sekitar Rp18.000–Rp50.000 per porsi",
+        rating: 4.5,
+        reviews: 2755,
+        address: "Jl. Jaksa Agung Suprapto Gang 1 No. 22, Kelurahan Samaan, Kecamatan Klojen, Kota Malang, Jawa Timur 65111",
+        desc: "Tempat kuliner yang menawarkan olahan mi dimasak bersama bumbu khas lalu dipanggang sehingga menghasilkan aroma smoky, rasa gurih, serta pilihan tingkat kepedasan.",
+        image: "images/MIE BAKAR CELAKET.jpg",
+        mapsUrl: "https://maps.app.goo.gl/3GM7h2GtPE1HG9ry9",
+        signature: "Mie Bakar Mozzarella, Mie Bakar Daging Asap, Mie Bakar Chicken Strip, Mie Bakar Bakso Sapi, Mie Bakar Udang, dan Mie Bakar Siomay Udang"
+    },
+    {
+        id: 42,
+        name: "Soto Seger Boyolali",
+        category: "Soto",
+        priceRange: "hemat",
+        priceText: "Rp10.000 - Rp25.000",
+        rating: 4.8,
+        reviews: 450,
+        address: "Jl. Raya Langsep No. 4, Bareng, Kec. Klojen, Kota Malang, Jawa Timur",
+        desc: "Warung soto dengan kuah bening gurih yang segar dan ringan, cocok untuk sarapan maupun makan siang bersama aneka gorengan serta sate pelengkap.",
+        image: "images/SSB.jpeg",
+        mapsUrl: "https://www.google.com/maps/search/?api=1&query=Soto+Seger+Boyolali+Malang",
+        signature: "Soto Ayam Kampung, Soto Daging Sapi, Gorengan & Sate Pelengkap"
+    },
+    {
+        id: 43,
+        name: "Soto Ayam Bawang Dinoyo",
+        category: "Soto",
+        priceRange: "hemat",
+        priceText: "Rp15.000 - Rp25.000",
+        rating: 4.9,
+        reviews: 410,
+        address: "Jl. MT. Haryono No. 308, Dinoyo, Kec. Lowokwaru, Kota Malang, Jawa Timur 65144",
+        desc: "Warung soto di kawasan Dinoyo dengan kuah gurih beraroma bawang dan koya yang cocok untuk sarapan maupun makan siang santai.",
+        image: "images/SOTO AYAM BAWANG.jpeg",
+        mapsUrl: "https://www.google.com/maps/search/?api=1&query=Soto+Ayam+Bawang+Dinoyo+Malang",
+        signature: "Soto Ayam Bawang, Soto Ayam Bawang Spesial & Telur Asin"
+    },
+    {
+        id: 44,
+        name: "Soto Ayam Kampung Soetomo",
+        category: "Soto",
+        priceRange: "sedang",
+        priceText: "Rp20.000 - Rp35.000",
+        rating: 4.8,
+        reviews: 680,
+        address: "Jl. Dr. Soetomo No. 18, Klojen, Kota Malang, Jawa Timur",
+        desc: "Tempat makan soto ayam di kawasan pusat kota dengan kuah gurih hangat dan pilihan isian ayam serta pelengkap yang pas disantap di pagi hingga siang hari.",
+        image: "images/SOTO SOETOMO.jpeg",
+        mapsUrl: "https://www.google.com/maps/search/?api=1&query=Soto+Ayam+Soetomo+Malang",
+        signature: "Soto Ayam Kampung, Soto Istimewa & Lontong/Nasi Soto"
     }
 ];
         
@@ -719,15 +887,36 @@ function closeFavoritesModal() {
 }
 
 /* ==========================================================
-   LOGIKA RODA ACAK INTERAKTIF (SPINNING WHEEL) - VERSI REVISI FINAL
+/* ==========================================================
+   LOGIKA RODA ACAK INTERAKTIF (SPINNING WHEEL) - 10 DATA DINAMIS
    ========================================================== */
 
+const WHEEL_COUNT = 10;
+let activeWheelData = [];
+
+function getRandomWheelItems(sourceArray, count = WHEEL_COUNT) {
+    const copy = [...sourceArray];
+    for (let i = copy.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+    }
+    return copy.slice(0, Math.min(count, copy.length));
+}
+
+function refreshWheelData() {
+    activeWheelData = getRandomWheelItems(kulinerData, WHEEL_COUNT);
+    arc = (Math.PI * 2) / activeWheelData.length;
+    startAngle = 0;
+}
+
 function openWheelModal() {
+    if (kulinerData.length === 0) return;
+
     document.getElementById('wheel-modal').classList.remove('hidden');
-    document.getElementById('wheel-result-box').innerHTML = `<span class="text-[#8a9482] text-xs font-semibold">Tekan tombol putar di bawah!</span>`;
+    document.getElementById('wheel-result-box').innerHTML = `<span class="text-[#8a9482] text-xs font-semibold">10 tempat acak siap! Tekan tombol putar di bawah.</span>`;
     document.getElementById('wheel-detail-btn').classList.add('hidden');
-    
-    arc = Math.PI / (kulinerData.length / 2);
+
+    refreshWheelData();
     drawWheel();
 }
 
@@ -739,7 +928,7 @@ function closeWheelModal() {
 // Fungsi Menggambar Roda dengan Teks Horizontal 2 Baris di Tengah (Tidak Terbalik)
 function drawWheel() {
     const canvas = document.getElementById("wheel-canvas");
-    if (!canvas.getContext) return;
+    if (!canvas.getContext || activeWheelData.length === 0) return;
 
     const ctx = canvas.getContext("2d");
     const outsideRadius = 135;
@@ -750,7 +939,7 @@ function drawWheel() {
     ctx.strokeStyle = "#ffffff";
     ctx.lineWidth = 2;
 
-    for (let i = 0; i < kulinerData.length; i++) {
+    for (let i = 0; i < activeWheelData.length; i++) {
         const angle = startAngle + i * arc;
         ctx.fillStyle = wheelColors[i % wheelColors.length];
 
@@ -764,28 +953,28 @@ function drawWheel() {
         ctx.save();
         ctx.shadowBlur = 0;
         ctx.fillStyle = "#2c3327";
-        
+
         // Posisikan titik tengah teks di bagian tengah irisan roda (radius 75px)
         const midAngle = angle + arc / 2;
         ctx.translate(140 + Math.cos(midAngle) * 75, 140 + Math.sin(midAngle) * 75);
-        
+
         // Atur rotasi agar teks tidak terbalik di sisi kiri roda
         let textAngle = midAngle;
         if (textAngle > Math.PI / 2 && textAngle < Math.PI * 1.5) {
             textAngle += Math.PI;
         }
         ctx.rotate(textAngle);
-        
+
         ctx.font = "bold 9px 'Plus Jakarta Sans', sans-serif";
         ctx.textAlign = "center";
-        
-        let text = kulinerData[i].name;
-        
+
+        let text = activeWheelData[i].name;
+
         // Bagi teks menjadi 2 baris agar pas di tengah irisan
         let words = text.split(" ");
         let line1 = "";
         let line2 = "";
-        
+
         if (words.length > 1) {
             let midIndex = Math.ceil(words.length / 2);
             line1 = words.slice(0, midIndex).join(" ");
@@ -806,7 +995,7 @@ function drawWheel() {
         } else {
             ctx.fillText(line1, 0, 2);
         }
-        
+
         ctx.restore();
     }
 
@@ -819,13 +1008,17 @@ function drawWheel() {
 }
 
 function spinWheel() {
-    if (isSpinning) return;
-    
+    if (isSpinning || kulinerData.length === 0) return;
+
+    // Acak ulang 10 data setiap kali tombol putar ditekan
+    refreshWheelData();
+    drawWheel();
+
     isSpinning = true;
     document.getElementById('spin-btn').disabled = true;
     document.getElementById('spin-btn').classList.add('opacity-50');
     document.getElementById('wheel-detail-btn').classList.add('hidden');
-    document.getElementById('wheel-result-box').innerHTML = `<i class="fa-solid fa-spinner animate-spin text-xl text-[#BBCA6F] mb-1"></i><span class="text-xs font-bold text-[#707968]">Memutar roda keberuntungan...</span>`;
+    document.getElementById('wheel-result-box').innerHTML = `<i class="fa-solid fa-spinner animate-spin text-xl text-[#BBCA6F] mb-1"></i><span class="text-xs font-bold text-[#707968]">Mengacak 10 kuliner & memutar roda...</span>`;
 
     spinAngleStart = Math.random() * 10 + 10;
     spinTime = 0;
@@ -848,7 +1041,7 @@ function rotateWheel() {
 function stopRotateWheel() {
     clearTimeout(spinTimeout);
     isSpinning = false;
-    
+
     const spinBtn = document.getElementById('spin-btn');
     spinBtn.disabled = false;
     spinBtn.classList.remove('opacity-50');
@@ -856,9 +1049,9 @@ function stopRotateWheel() {
     const degrees = startAngle * 180 / Math.PI + 90;
     const arcd = arc * 180 / Math.PI;
     const index = Math.floor((360 - degrees % 360) / arcd);
-    
-    selectedIndex = (index + kulinerData.length) % kulinerData.length;
-    const chosen = kulinerData[selectedIndex];
+
+    selectedIndex = (index + activeWheelData.length) % activeWheelData.length;
+    const chosen = activeWheelData[selectedIndex];
 
     const resultBox = document.getElementById('wheel-result-box');
     resultBox.innerHTML = `
